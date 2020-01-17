@@ -43,4 +43,7 @@ module.exports = withCss(withSass({
   sassLoaderOptions: {
     includePaths: [cwd('node_modules'), cwd('src')],
   },
+  publicRuntimeConfig: {
+    THEME_COLOR: '#fff',
+  },
 }));
