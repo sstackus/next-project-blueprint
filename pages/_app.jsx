@@ -9,7 +9,9 @@ export default function _app({ Component, pageProps }) {
   return (
     <>
       <Header className="flex-0" />
-      <Component {...pageProps} />
+      <div className="flex-auto">
+        <Component {...pageProps} />
+      </div>
       <Footer className="flex-0" />
     </>
   );
