@@ -1,0 +1,17 @@
+{
+  "name": "next-project-blueprint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sol-214/next-project-blueprint.git"
+  },
+  "author": "Simon Stack <simon@stackus.dev>",
+  "license": "ISC",
+  "homepage": "https://github.com/sol-214/next-project-blueprint#readme"
+}
