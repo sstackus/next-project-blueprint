@@ -4,7 +4,7 @@ import { bind } from '@/decorators';
 
 export default class Test extends React.PureComponent {
   state = {
-    val: 'Test',
+    val: process.env.INPUT_DEFAULT,
   };
 
   @bind
@@ -16,7 +16,7 @@ export default class Test extends React.PureComponent {
     const { val } = this.state;
 
     return (
-      <div className="border border-gray-200 p-4">
+      <div className="border border-gray-200 p-6 my-6">
         <input
           name="val"
           type="text"
