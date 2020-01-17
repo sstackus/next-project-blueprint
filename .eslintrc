@@ -1,0 +1,70 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb"
+  ],
+  "plugins": [
+    "react-hooks",
+    "import"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "legacyDecorators": true
+    }
+  },
+  "rules": {
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/state-in-constructor": [1, "never"],
+    "object-curly-newline": ["error", {
+      "ImportDeclaration": { "multiline": true, "minProperties": 6 },
+      "ExportDeclaration": { "multiline": true, "minProperties": 6 }
+    }],
+    "react/static-property-placement": "off",
+    "no-underscore-dangle": "off",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "import/order": ["error", {
+      "newlines-between": "ignore",
+      "groups": [["external", "builtin"], "internal", ["parent", "sibling", "index"]],
+      "alphabetize": { "order": "asc" }
+    }],
+    "react/no-array-index-key": "warn",
+    "react/sort-comp": ["error", {
+      "order": [
+        "static-variables",
+        "instance-variables",
+        "static-methods",
+        "lifecycle",
+        "getters",
+        "setters",
+        "/^get.*$/",
+        "/^set.*$/",
+        "/^has.*$/",
+        "/^is.*$/",
+        "/^handle.*$/",
+        "instance-methods",
+        "everything-else",
+        "render"
+      ]
+    }]
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@/images", "./public/images"],
+          ["@", "./src"]
+        ],
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  }
+}

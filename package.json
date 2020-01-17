@@ -20,5 +20,26 @@
     "next": "^9.2.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
+  },
+  "engines": {
+    "node": ">=13.6.0"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^5.0.1",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.3",
+    "directory-named-webpack-plugin": "^4.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "node-sass": "^4.13.1",
+    "path": "^0.12.7"
   }
 }
