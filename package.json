@@ -31,6 +31,7 @@
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.3",
     "directory-named-webpack-plugin": "^4.0.1",
+    "dotenv": "^8.2.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-import-resolver-alias": "^1.1.2",

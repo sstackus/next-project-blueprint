@@ -2,6 +2,7 @@
 const withCss = require('@zeit/next-css');
 const withSass = require('@zeit/next-sass');
 const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin');
+const dotenv = require('dotenv');
 const path = require('path');
 
 function cwd(...fragments) {
@@ -11,6 +12,8 @@ function cwd(...fragments) {
 module.exports = withCss(withSass({
   target: 'server',
   webpack(config, { webpack, dev }) {
+    dotenv.config({ path: `config/${process.env.NODE_ENV}.env` });
+
     config.resolve.alias['@/images'] = cwd('public', 'images');
     config.resolve.alias['@'] = cwd('src');
 
